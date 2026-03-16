@@ -1,4 +1,4 @@
-baseURL = 'https://kimseungo.github.io/'
+baseURL = 'https://kimseungo.github.io/my-tech-blog/'
 languageCode = 'ko-kr'
 title = 'Cloud Engineer Tech Blog'
 theme = 'PaperMod'
