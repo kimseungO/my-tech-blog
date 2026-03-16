@@ -1,0 +1,8 @@
+baseURL = 'https://kimseungo.github.io/'
+languageCode = 'ko-kr'
+title = 'Cloud Engineer Tech Blog'
+theme = 'PaperMod'
+
+[params]
+    defaultTheme = "auto"
+    showCodeCopyButtons = true
