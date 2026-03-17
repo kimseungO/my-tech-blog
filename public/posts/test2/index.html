@@ -5,11 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>404 Page not found | Cloud Engineer Tech Blog</title>
+<title>Test2 | Cloud Engineer Tech Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="test
+test
+{test}">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/my-tech-blog/404.html">
+<link rel="canonical" href="http://localhost:1313/my-tech-blog/posts/test2/">
 <link crossorigin="anonymous" href="/my-tech-blog/assets/css/stylesheet.a29c24210eb31d9ce56f669c66a35c9c51b17376b7764e336a49af7dec914cf0.css" integrity="sha256-opwkIQ6zHZzlb2acZqNcnFGxc3a3dk4zakmvfeyRTPA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/my-tech-blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/my-tech-blog/favicon-16x16.png">
@@ -18,7 +20,7 @@
 <link rel="mask-icon" href="http://localhost:1313/my-tech-blog/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/my-tech-blog/404.html">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/my-tech-blog/posts/test2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,7 +74,7 @@
 
 </script>
 </head>
-<body class="list" id="top">
+<body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -105,7 +107,29 @@
     </nav>
 </header>
 <main class="main">
-<div class="not-found">404</div>
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Test2
+    </h1>
+    <div class="post-meta"><span title='2026-03-17 01:01:42 +0900 KST'>March 17, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="test">test<a hidden class="anchor" aria-hidden="true" href="#test">#</a></h1>
+<h3 id="test-1">test<a hidden class="anchor" aria-hidden="true" href="#test-1">#</a></h3>
+<p>{test}</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">
@@ -182,6 +206,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

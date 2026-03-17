@@ -3,6 +3,47 @@ languageCode = 'ko-kr'
 title = 'Cloud Engineer Tech Blog'
 theme = 'PaperMod'
 
+# 가독성을 위한 최적화 설정
+paginate = 5  # 한 페이지당 글 개수
+
 [params]
+    # 블로그 기본 설정
+    description = "클라우드 인프라와 자동화를 공부하는 기술 블로그입니다."
+    author = "Kim SeungO"
     defaultTheme = "auto"
-    showCodeCopyButtons = true
+    showCodeCopyButtons = true  # 코드 복사 버튼 활성화
+    showReadingTime = true      # 읽기 소요 시간 표시
+    showBreadCrumbs = true      # 경로 표시 (Home > Posts > ...)
+
+    # 메인 화면 프로필 설정 (Home-Info Mode)
+    [params.homeInfoParams]
+        Title = "Hi there, I'm SeungO! 👋"
+        Content = "Cloud Infrastructure | Kubernetes | DevOps 취준생의 학습 기록 공간입니다."
+
+    # 소셜 및 컨택 포인트 (아이콘으로 표시됨)
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/kimseungO"
+    [[params.socialIcons]]
+        name = "email"
+        url = "mailto:본인이메일@gmail.com"
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://linkedin.com/in/본인아이디"
+
+    # 상단 메뉴바 설정
+    [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 10
+    [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 20
+    [[menu.main]]
+        identifier = "search"
+        name = "Search"
+        url = "/search/"
+        weight = 30
